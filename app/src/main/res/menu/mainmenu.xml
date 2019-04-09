@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainmenu_app_bar_signout"
+        android:orderInCategory="104"
+        android:title="@string/menu_signout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mainmenu_app_bar_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="101"
+        android:title="@string/menu_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mainmenu_app_bar_changepassword"
+        android:orderInCategory="105"
+        android:title="changepassword"/>
+
+
+</menu>

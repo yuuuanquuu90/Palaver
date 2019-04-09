@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relativelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/conversation_recipient_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/corners_bg_recepient"
+            android:gravity="left"
+            android:maxWidth="290dp"
+            android:padding="5dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            tools:text="hello youfdf"/>
+
+        <TextView
+            android:id="@+id/conversation_recipient_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/conversation_recipient_msg"
+            android:layout_toRightOf="@+id/conversation_recipient_msg"
+            android:textColor="@android:color/background_dark"
+            tools:text="12:12"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FRIENDNAME">friendname</string>
+    <string name="MSG">msg</string>
+    <string name="DATE">date</string>
+    <string name="TIME">time</string>
+    <string name="TYPE">type</string>
+    <string name="SENDER">sender</string>
+    <string name="RECIPIENT">recipient</string>
+    <string name="FLAG_DELETE_FRIEND">df</string>
+    <string name="DELETE_BROADCASTING">de.uni_due.paluno.se.palaver.delete.</string>
+    <string name="GCM">de.uni_due.paluno.se.palaver.message.</string>
+    <string name="REFRESHMSGINCONVERSATION">de.uni_due.paluno.se.palaver.mybc.</string>
+    <string name="size">size</string>
+</resources>

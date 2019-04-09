@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/chats_layout"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/chat_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_face_black_48dp"/>
+
+        <ImageView
+            android:id="@+id/chat_notification_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chat_face"
+            android:layout_alignRight="@+id/chat_face"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            app:srcCompat="@android:drawable/ic_notification_overlay"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+            android:id="@+id/chat_date"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_above="@+id/chat_message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            tools:text="06/08/2017"/>
+
+        <TextView
+            android:id="@+id/chat_message"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            tools:text="hello world."/>
+
+        <TextView
+            android:id="@+id/chat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            tools:text="yuan"/>
+    </RelativeLayout>
+
+</LinearLayout>

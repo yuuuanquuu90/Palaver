@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="de.paluno.mse.palaver.activitymanager.Signup">
+
+    <ScrollView
+        android:id="@+id/showview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/nickname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/titel"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    app:srcCompat="@drawable/ic_account_circle_black_24dp"
+                    android:contentDescription="@string/username"/>
+
+                <EditText
+                    android:id="@+id/signiup_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/password1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/nickname_layout"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    app:srcCompat="@drawable/ic_lock_black_24dp"
+                    android:contentDescription="@string/password"/>
+
+                <EditText
+                    android:id="@+id/signup_password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/password2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@+id/password1_layout"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    app:srcCompat="@drawable/ic_lock_black_24dp"
+                    android:contentDescription="@string/password"/>
+
+                <EditText
+                    android:id="@+id/signup_password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="55dp"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/login_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password2_layout"
+                android:layout_marginTop="10dp"
+                android:text="@string/confirm"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:id="@+id/titel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/signup_titel"
+                android:textColor="@color/colorSecondaryDark"
+                android:textSize="28sp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/sinup_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:max="200"
+        android:progress="0"
+        android:visibility="gone"/>
+
+</RelativeLayout>
